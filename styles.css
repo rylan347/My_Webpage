@@ -3,7 +3,18 @@ body {
     background-repeat: repeat;
     background-size: 300px; /* Adjust size as needed */
     background-opacity: 0.3; /* This property doesn't exist in CSS */
-    color: #Add8e6; /* Text color */
+    color: #000000; /* Text color */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 85, 90, 0.7);
+    z-index: -1;
 }
 
 .indented {
