@@ -26,6 +26,7 @@ Reflection:
  </head>
 
  <body>
+  <div class="content-container">
   <h1>Rylan Cunningham</h1>
   <img src="my_image.jpg" alt="My Photo" width="500" height="500">
   
@@ -47,12 +48,14 @@ Reflection:
   </ol>
 
   <h2>Dr. Pepper Blues:</h2>
+  <p>
   <p>A limmerick dedicated to my diet Dr. Pepper addiction.</p>
   There once was a man named chester,<br>
   He was addicted to Dr. Pepper,<br>
   <span class="indented">He drank it with glee,</span><br>
   <span class="indented">From morning 'till three,</span><br>
   His trash bin couldn't be fuller!
+</p>
 
   <h2>My personal interests:</h2>
   <p>My first interest is that I like to work on electronics. I spend a lot of my time creating 
@@ -67,120 +70,118 @@ Reflection:
 
 <h2>Class Schedule</h2>
  <h3>Fall 2025</h3>
-<table border="1" cellspacing="3" cellpadding="3">
-  <tr>
-    <th></th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
+<table class="schedule-table">  <tr>
+    <th class="schedule-header"></th>
+    <th class="schedule-header">Monday</th>
+    <th class="schedule-header">Tuesday</th>
+    <th class="schedule-header">Wednesday</th>
+    <th class="schedule-header">Thursday</th>
+    <th class="schedule-header">Friday</th>
+  </tr>
+    <td class="time-column">8:00</td>
+    <td class="part-time-job" rowspan="8">Part-time Job</td>
+    <td class="class" rowspan="2">CS 3060 - Operating Systems Theory</td>
+    <td class="part-time-job" rowspan="8">Part-time Job</td>
+    <td class="class" rowspan="2">CS 3060 - Operating Systems Theory</td>
+    <td class="class" rowspan="2">CYBR 4350 - Web and App Security</td>
   </tr>
   <tr>
-    <td>8:00</td>
-    <td rowspan="8">Part-time Job</td>
-    <td rowspan="2">CS 3060 - Operating Systems Theory</td>
-    <td rowspan="8">Part-time Job</td>
-    <td rowspan="2">CS 3060 - Operating Systems Theory</td>
-    <td rowspan="2">CYBR 4350 - Web and App Security</td>
+    <td class="time-column">8:30</td>
   </tr>
   <tr>
-    <td>8:30</td>
+    <td class="time-column">9:00</td>
+    <td class="class" rowspan="2">CS 3240 - Discrete Math Structures II</td>
+    <td class="class" rowspan="2">CS 3240 - Discrete Math Structures II</td>
+    <td class="study-time" rowspan="2">Study Time</td>
   </tr>
   <tr>
-    <td>9:00</td>
-    <td rowspan="2">CS 3240 - Discrete Math Structures II</td>
-    <td rowspan="2">CS 3240 - Discrete Math Structures II</td>
-    <td rowspan="2">Study Time</td>
+    <td class="time-column">9:30</td>
   </tr>
   <tr>
-    <td>9:30</td>
+    <td class="time-column">10:00</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="class" rowspan="2">CS 3260 - C# Software Development</td>
   </tr>
   <tr>
-    <td>10:00</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">CS 3260 - C# Software Development</td>
+    <td class="time-column">10:30</td>
   </tr>
   <tr>
-    <td>10:30</td>
+    <td class="time-column">11:00</td>
+    <td class="class" rowspan="2">CS 3120 - Ethical Hacking Tools Dev</td>
+    <td class="class" rowspan="2">CS 3120 - Ethical Hacking Tools Dev</td>
+    <td class="class" rowspan="2">CYBR 4350 - Web and App Security</td>
   </tr>
   <tr>
-    <td>11:00</td>
-    <td rowspan="2">CS 3120 - Ethical Hacking Tools Dev</td>
-    <td rowspan="2">CS 3120 - Ethical Hacking Tools Dev</td>
-    <td rowspan="2">CYBR 4350 - Web and App Security</td>
+    <td class="time-column">11:30</td>
   </tr>
   <tr>
-    <td>11:30</td>
+    <td class="time-column">12:00</td>
+    <td class="lunch-time" rowspan="2">Lunch</td>
+    <td class="lunch-time" rowspan="2">Lunch</td>
+    <td class="lunch-time" rowspan="2">Lunch</td>
+    <td class="lunch-time" rowspan="2">Lunch</td>
+    <td class="lunch-time" rowspan="2">Lunch</td>
   </tr>
   <tr>
-    <td>12:00</td>
-    <td rowspan="2">Lunch</td>
-    <td rowspan="2">Lunch</td>
-    <td rowspan="2">Lunch</td>
-    <td rowspan="2">Lunch</td>
-    <td rowspan="2">Lunch</td>
+    <td class="time-column">12:30</td>
   </tr>
   <tr>
-    <td>12:30</td>
+    <td class="time-column">1:00</td>
+    <td class="class" rowspan="2">CS 3390R - Rust Programming Languages</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="class" rowspan="2">CS 3390R - Rust Programming Languages</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="class" rowspan="2">CS 3260 - C# Software Development</td>
   </tr>
   <tr>
-    <td>1:00</td>
-    <td rowspan="2">CS 3390R - Rust Programming Languages</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">CS 3390R - Rust Programming Languages</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">CS 3260 - C# Software Development</td>
+    <td class="time-column">1:30</td>
   </tr>
   <tr>
-    <td>1:30</td>
+    <td class="time-column">1:00</td>
+    <td class="class" rowspan="2">CS 3390R - Rust Programming Languages</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="class" rowspan="2">CS 3390R - Rust Programming Languages</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="class" rowspan="2">CS 3260 - C# Software Development</td>
   </tr>
   <tr>
-    <td>2:00</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">CYBR 4350 - Web and App Security</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">Free Time</td>
+    <td class="time-column">2:30</td>
   </tr>
   <tr>
-    <td>2:30</td>
+    <td class="time-column">4:00</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="free-time" rowspan="2">Free Time</td>
   </tr>
   <tr>
-    <td>3:00</td>
-    <td rowspan="2">CS 3240 - Discrete Math Structures II</td>
-    <td rowspan="2">CS 3390R - Rust Programming Languages</td>
-    <td rowspan="2">CS 3260 - C# Software Development</td>
-    <td rowspan="2">CS 3120 - Ethical Hacking Tools Dev</td>
-    <td rowspan="2">Free Time</td>
+    <td class="time-column">3:30</td>
   </tr>
   <tr>
-    <td>3:30</td>
+    <td class="time-column">4:00</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="study-time" rowspan="2">Study Time</td>
+    <td class="free-time" rowspan="2">Free Time</td>
   </tr>
   <tr>
-    <td>4:00</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">IoT Project<br>Development</td>
-    <td rowspan="2">Study Time</td>
-    <td rowspan="2">IoT Project<br>Development</td>
-    <td rowspan="2">Free Time</td>
+    <td class="time-column">4:30</td>
   </tr>
   <tr>
-    <td>4:30</td>
+    <td class="time-column">5:00</td>
+    <td class="free-time" rowspan="2">Free Time</td>
+    <td class="cybersecurity-club" rowspan="2">Cybersecurity Club</td>
+    <td class="free-time" rowspan="2">Free Time</td>
+    <td class="cybersecurity-club" rowspan="2">Cybersecurity Club</td>
+    <td class="free-time" rowspan="2">Free Time</td>
   </tr>
   <tr>
-    <td>5:00</td>
-    <td rowspan="2">Free Time</td>
-    <td rowspan="2">Cybersecurity Club</td>
-    <td rowspan="2">Free Time</td>
-    <td rowspan="2">Cybersecurity Club</td>
-    <td rowspan="2">Free Time</td>
-  </tr>
-  <tr>
-    <td>5:30</td>
+    <td class="time-column">5:30</td>
   </tr>
 </table>
-  
+  </div>
  </body>
 </html>
