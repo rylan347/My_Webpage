@@ -1,31 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
     font-size: 12pt;
-    margin: 20px;
+    margin: 0px;
+    padding: 20px 0;
     line-height: 1.6;
-    background-image: url('floral-blue.jpg');
+    background-image: url('background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: lightblue;
-    z-index: -1;
+    min-height: 100vh;
 }
 
 p {
+    text-indent: 2em;
+    margin-bottom: 12pt;
     margin-bottom: 12pt;
     margin-top: 0;
 }
 
 .indented {
     padding-left: 40px;
+}
+
+/* Set the first header to be size 32 and Rajdhani font in a blue to purple gradient
+and white text with drop shadow on the box and the text. */
+h1 {
+    font-family: 'Rajdhani', 'Chiller', 'Showcard Gothic', cursive;
+    font-size: 32pt;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0 40px 0;
+    padding: 25px;
+    color: white;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Moved photo to be right hand jsutified, with a 15px box around it with a 45% gradient */
+img[src="my_image.jpg"] {
+    float:right;
+    margin: 0 0 20px 30px;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 8px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4),
+    0 4px 15px rgba(155, 89, 182, 0.3);
+    
+}
+
+h2 {
+    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+    font-size: 24pt;
+    font-weight: 600;
+    color: white;
+    margin-top: 18pt;
+    margin-bottom: 2.4pt;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    display: inline-block;
+    width: auto;
+}
+
+h3 {
+    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+    font-size: 18pt;
+    font-weight: 500;
+    color: #3498db;
+    margin-top: 13.5pt;
+    margin-bottom: 4.5pt;
+    padding: 8px 15px;
+    border-left: 4px solid #9b59b6;
+    background: linear-gradient(90deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
+    border-radius: 0 5px 5px 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+}
+
+.schedule-table {
+    table-layout: fixed;
+    width: 800px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px 0;
+    border: 3px solid #3498db;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+/* Make the days of the week look similar to the headers */
+.schedule-header {
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14pt;
+    padding: 15px 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    width: 120px;
+}
+
+.time-column {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    width: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.part-time-job {
+    background-color: #e8f4fd;
+    border: 1px solid #3498db;
+    color: #2c3e50;
+}
+
+.class {
+    background-color: #f4e8fd;
+    border: 1px solid #9b59b6;
+    color: #2c3e50;
+}
+
+.study-time {
+    background-color: #e8f8f5;
+    border: 1px solid #27ae60;
+    color: #2c3e50;
+}
+
+.lunch-time {
+    background-color: #fef9e7;
+    border: 1px solid #f39c12;
+    color: #2c3e50;
+}
+
+.free-time {
+    background-color: #fdedec;
+    border: 1px solid #e74c3c;
+    color: #2c3e50;
+}
+
+.cybersecurity-club {
+    background-color: #f8f9fa;
+    border: 1px solid #6c757d;
+    color: #2c3e50;
+}
+
+/* Cell designs */
+.schedule-table td {
+    padding: 8px 6px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 11pt;
+    line-height: 1.3;
+    border-bottom: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+/* Marks for every thirty minutes */
+.schedule-table tr:nth-child(even) td {
+    border-bottom: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+/* create my container to center my website on a div */
+.content-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
